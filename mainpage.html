@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>Cartoon Mania</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<script language="JavaScript">
+function frameSize(id){
+var theheight;
+document.getElementById(id).height=0;
+if(document.getElementById){
+theheight= document.getElementById(id).contentWindow.document.body.scrollHeight+45;
+}
+document.getElementById(id).height=theheight;
+}
+</script>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+   
+</head>
+<body style="margin:0px">
+<div class="header">
+<a href="home.html" target="here"><img src="logo.jpg" style="width:200px;height:auto;margin:0;"></img></a>
+<ul>
+<li><a href="home.html" target="here">Home</a></li>
+<li>
+<div class="dropdown">
+<button class="dropbtn">Cartoon Channels</button>
+<div class="dropdown-content">
+<a href="disney.html" target="here">Disney</a>
+<a href="cn.html" target="here">Cartoon Network</a>
+<a href="pogo.html" target="here">Pogo</a>
+<a href="hungama.html" target="here">Hungama</a>
+</div>
+</div></li>
+<li>
+<div class="dropdown">
+<button class="dropbtn">Cartoon Character</button>
+<div class="dropdown-content">
+<a href="sinchan.html" target="here">Sinchan</a>
+<a href="pandp.html" target="here">Phineas and Ferb</a>
+<a href="pokemon.html" target="here">Pokemon</a>
+<a href="chhotabheem.html" target="here">Chhota Bheem</a>
+</div>
+</div></li>
+<li><a href="aboutus.html" target="here">About us</a></li>
+<li><a href="contact_us.html" target="here">Contact us</a></li>
+</ul>
+</div> 
+</div>
+<div class="middle">
+<iframe src="home.html" width="100%" frameborder="0" id="here" name="here" onLoad="frameSize('here');" ></iframe>
+</div>
+<div class="footer">
+<p style="text-align:center;">@All copyrights reserved to Cartoon Mania</p>
+</div>
+</body>
+</html>
